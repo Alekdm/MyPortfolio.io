@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1"> 
+          <link rel="stylesheet" href="styles.css">
+          <title>My Portfolio Website</title>
+          <script src="https://kit.fontawesome.com/c4a08f46ff.js" crossorigin="anonymous"></script>
+    </head>
+
+  <body>
+        <!-------------Header--------------->
+          <div id="header">
+                  <div class="container">
+                          <nav>
+                                <img src="Images/Logo.png" class="logo">
+                                <ul id="sidemenu">
+                                      <li> <a href="#header">Home</a> </li>
+                                      <li> <a href="#about">About</a> </li>
+                                      <li> <a href="#services">Services</a> </li>
+                                      <li> <a href="#portfolio">Portfolio</a> </li>
+                                      <li> <a href="#contact">Contact</a> </li>
+                                      <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                                </ul>
+                                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                          </nav>
+                          <div class="header-text">
+                                <p>Front End Developer</p>
+                                <h1>Hi, I'm <span>Alex</span> Sandoval</h1>
+                          </div>
+                  </div>
+          </div>
+        <!-------------About--------------->
+          <div id="about">
+              <div class="container">
+                      <div class="row">
+                              <div class="about-col-1">
+                                    <img src="Images/User.png">
+                              </div>
+                              <div class="about-col-2">
+                                      <h1 class="sub-title">About Me</h1>
+
+                                      <p>Hey there! My name is Alex, and I'm a 26-year-old from California. I'm a proud 
+                                        dad, and I've always been fascinated by computers. It's amazing how you can let 
+                                        your imagination run wild and create all sorts of things!<br><br>
+                                        I got my first IT job back in October 2021, and I've been working hard to become
+                                         a software engineer ever since, all without any formal education. I'm self-taught
+                                          in HTML, CSS, and Python, and I'd say I'm an intermediate in those three languages.<br><br>
+                                        
+                                          I have successfully created two websites for small businesses, utilizing my skills in web development 
+                                          and design to create visually appealing and user-friendly websites that helped my clients stand out in 
+                                          their respective markets. On the programming side, I have worked on various Python projects, including 
+                                          a bot that automates the process of getting discounts on Bestbuy's website and exporting them to a server. 
+                                          My expertise in Python extends beyond the basics, as I continue to dive deeper into advanced techniques to 
+                                          build more sophisticated and powerful programs. I am also eager to expand my knowledge in Java and 
+                                          leverage it for my future programming projects. I am committed to staying up-to-date with the latest programming 
+                                          technologies and trends to provide the best solutions to my clients.<br><br>
+                                        
+                                        One of my greatest strengths as a programmer is my problem-solving skills, and I love 
+                                        working with a team to tackle complex projects. Sure, I've faced challenges along the 
+                                        way, especially in learning everything on my own, but I've found online tutorials and 
+                                        solutions to be really helpful.<br><br>
+                                        
+                                        Outside of work, I love spending time with my daughter and dog. When I have free time,
+                                         I like playing video games with my friends or practicing my Python skills. <br><br>
+                                        
+                                        For anyone who's just starting out in the world of programming and IT, my advice is to 
+                                        always be open to learning and be prepared to use your brain to solve some complex problems!
+                                         The most important things to me are my family and personal health, and they guide both my 
+                                         work and personal life. Thanks for getting to know me!</p>
+                                      <div class="tab-titles">
+                                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                                      </div>  
+
+                                      <div class="tab-contents active-tab" id="skills">
+                                              <ul>
+                                                    <li><span>Web Development</span><br>Web app Development</li>
+                                                    <li><span>Logo Design</span><br>Designing unique branding</li>
+                                                    <li><span>Python Automation</span><br>Automate tasks using Python</li>
+                                              </ul>
+                                      </div>
+                                      <div class="tab-contents" id="experience">
+                                              <ul>
+                                                    <li><span>2022-2023</span><br>Service Desk Technician at Driscoll's</li>
+                                                    <li><span>2021-2022</span><br>IT Technician at PriorityWorkforce</li>
+                                                    <li><span>2019-2020</span><br>Sales Rep at Hardin Honda</li>                                                  
+                                              </ul>
+                                      </div>
+                                      <div class="tab-contents" id="education">
+                                              <ul>
+                                                    <li><span>Udemy Course by Rob Percival</span><br>The Complete Web Developer Course 3.0</li>
+                                                    <li><span>Udemy Course by Colt Steele</span><br>The Advanced Web Developer Bootcamp</li>
+                                                    <li><span>Udemy Course by Colt Steele</span><br>The Web Developer Bootcamp 2023</li>
+                                              </ul>
+                                      </div>
+                              </div>                      
+                      </div>                
+              </div>
+                  
+              
+          </div>
+
+        <!-------------Services--------------->
+          <div id="services">
+                <div class="container">
+                      <h1 class="sub-title">My Services</h1>
+                          <div class="services-list">
+                                <div>
+                                      <i class="fa-solid fa-code"></i>
+                                      <h2>Web Design</h2>
+                                      <p>I specialize in creating visually stunning and user-friendly websites that help businesses 
+                                          stand out in the digital world. With a focus on user experience and the latest design trends, 
+                                          I craft custom solutions tailored to meet the unique needs of my clients.</p>
+                                        <a href="#services">Learn more</a>
+                                </div>
+
+                                <div>
+                                      <i class="fa-solid fa-pen-nib"></i>
+                                      <h2> Logo Design</h2>
+                                      <p>A great logo is essential for a successful brand. Create a memorable and timeless brand identity 
+                                          with my custom logo design services. I work closely with clients to understand their unique business 
+                                          needs and create a logo that effectively communicates their brand message. </p>
+                                        <a href="#services">Learn more</a>
+                                    </div>
+
+                                <div> 
+                                      <i class="fa-solid fa-globe"></i>
+                                      <h2>SEO</h2>
+                                      <p>SEO is the practice of optimizing your website to improve its visibility and ranking on search 
+                                           engine results pages. I use proven strategies and techniques to increase website traffic and drive
+                                           more qualified leads to your business. From keyword research to on-page optimization, I offer a 
+                                           comprehensive range of SEO services to help your website achieve 
+                                           its full potential. Contact me today to learn more about how SEO can benefit your business.</p>
+                                        <a href="#services">Learn more</a>
+                                </div>
+                          </div>
+                </div>
+          </div>
+
+      <!-------------Portfolio--------------->
+          <div id="portfolio">
+                <div class="container">
+                      <h1 class="sub-title">My Work</h1>
+                          <div class="work-list">
+                                <div class="work">
+                                      <img src="Images/work-1.png">
+                                      <div class="layer">
+                                          <h3>Lux Lashes</h3>
+                                          <h4>eCommerce Lash business</h4>
+                                          <p>We helped Lux Lashes achieve a successful rebranding during the pandemic, creating a beautiful new logo and website that captured 
+                                                their brand's essence. It was a pleasure to work with them, and I look forward to helping more businesses with their branding needs.</p>
+                                          <a href='https://lux-lash.com/'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                      </div>
+                                </div>
+                                <div class="work">
+                                      <img src="Images/work-2.png">
+                                      <div class="layer">
+                                          <h3>HeadzUp </h3>
+                                          <h4>Orange County Barber Shop</h4>
+                                          <p>We created a unique website for HeadzUp Barbershop that allowed customers to book appointments and purchase products. From design to 
+                                                optimization, we worked closely with them to ensure a professional appearance and attract their target audience. Proud to have 
+                                                represented them and excited to help more businesses succeed online.</p>
+                                          <a href='https://headzupoc.com/'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                      </div>
+                                </div>
+                                <div class="work">
+                                      <img src="Images/work-3.png">
+                                      <div class="layer">
+                                          <h3>Lux Lashes Logo</h3>
+                                          <p>We collaborated with Lux Lashes to create a unique and memorable logo that perfectly captured their brand's essence. 
+                                                Proud to have helped them achieve their branding goals and excited to design more impactful logos for other businesses.</p>
+                                          <a href='Images/work-3.png'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>                                          
+                                      </div>
+                                </div>
+                          </div>
+                          <!--<a href="#" class="btn">See More</a>-->
+                </div>
+          </div>
+
+      <!-------------Contact---------------> 
+         <div id="contact">
+                  <div class="container">
+                        <div class="row">
+                              <div class="contact-left">
+                                    <h1 class="sub-title">Contact Me</h1>
+                                    <p><i class="fa-solid fa-paper-plane"></i>Contact@alekdm.com</p>
+                                    <p><i class="fa-solid fa-phone"></i><a href="1(714)457-8701">1(714)457-8701</a></p>
+                                    <div class="social-icons">
+                                          <a href="https://www.linkedin.com/in/alejandro-sandoval-94180b155/"><i class="fa-brands fa-linkedin"></i></i></a>
+                                    </div>
+                                    <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+
+                              </div>
+                              <div class="contact-right">
+                                    <form name="submit-to-google-sheet">
+                                          <input type="text" name="Name" placeholder="Your Name" required>
+                                          <input type="email" name="Email" placeholder="Your Email" required>
+                                          <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                                          <button type="submit" class="btn btn2" >Submit</button>
+                                    </form>
+                                    <span id="msg"></span>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="copyright">
+                        <p>Copyright &copy; Create by Alex Sandoval</p>
+                  </div>
+         </div>       
+
+
+  <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+      function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+      }
+  </script>
+
+  <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+            sidemenu.style.right = "0";
+      }
+      function closemenu(){
+            sidemenu.style.right = "-200px";
+      }
+  </script>
+
+
+  <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw0YXdo0tZS2B1TW52R9eZcrQcgUf0VAfhhYRkEr9h9mIAU6GhdFiVoxyEV8UFN0QuA/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully!" 
+            setTimeout(function(){
+                  msg.innerHTML = ""                  
+            },5000)
+            form.reset()
+      })
+          .catch(error => console.error('Error!', error.message))
+      })
+  </script>
+  </body>
+
+</html>
