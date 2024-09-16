@@ -1,3 +1,94 @@
+:root {
+    --color-bg1: rgb(8, 10, 15);
+    --color-bg2: rgb(0, 17, 32);
+    --color1: 18, 113, 255;
+    --color2: 107, 74, 255;
+    --color3: 100, 100, 255;
+    --color4: 50, 160, 220;
+    --color5: 80, 47, 122;
+    --color-interactive: 140, 100, 255;
+    --circle-size: 80%;
+    --blending: hard-light;
+}
+
+.gradient-bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures it is behind all other content */
+    background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+    overflow: hidden;
+}
+
+.noiseBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: soft-light;
+    opacity: 0.3;
+}
+
+.gradients-container {
+    filter: url(#goo) blur(40px);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.g1, .g2, .g3, .g4, .g5 {
+    position: absolute;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    mix-blend-mode: var(--blending);
+    animation: moveInCircle 20s linear infinite;
+}
+
+.g1 {
+    background: radial-gradient(circle, rgba(var(--color1), 0.8), rgba(var(--color1), 0));
+}
+
+.g2 {
+    background: radial-gradient(circle, rgba(var(--color2), 0.8), rgba(var(--color2), 0));
+    animation: moveInCircle 40s linear infinite reverse;
+}
+
+.g3 {
+    background: radial-gradient(circle, rgba(var(--color3), 0.8), rgba(var(--color3), 0));
+    animation: moveInCircle 60s linear infinite;
+}
+
+.g4 {
+    background: radial-gradient(circle, rgba(var(--color4), 0.8), rgba(var(--color4), 0));
+    animation: moveInCircle 50s linear infinite reverse;
+}
+
+.g5 {
+    background: radial-gradient(circle, rgba(var(--color5), 0.8), rgba(var(--color5), 0));
+    animation: moveInCircle 70s linear infinite;
+}
+
+.interactive {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0%, rgba(var(--color-interactive), 0) 100%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+@keyframes moveInCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 *{
   margin: 0;
   padding: 0;
